@@ -74,8 +74,8 @@ function cargarJuego(jugabilidad, jugador1, jugador2) {
     //Generamos el contenido del HTML segun los jugadores elegidos
     document.querySelector('#turno1').innerHTML = `${jugador1}`;
     document.querySelector('#turno2').innerHTML = `${jugador2}`;
-    document.querySelector('#fichaPlayer1').src = `/images/4 en Linea/Tablero/Ficha ${jugador1} amarilla.png`
-    document.querySelector('#fichaPlayer2').src = `/images/4 en Linea/Tablero/Ficha ${jugador2} roja.png`
+    document.querySelector('#fichaPlayer1').src = `images/4 en Linea/Tablero/Ficha ${jugador1} amarilla.png`
+    document.querySelector('#fichaPlayer2').src = `images/4 en Linea/Tablero/Ficha ${jugador2} roja.png`
     
     //Llamamos a mostrar las fichas y los tableros cuando ya todas las imagenes esten cargadas
     juego.fichas[juego.fichas.length-1].image.onload = () => {
