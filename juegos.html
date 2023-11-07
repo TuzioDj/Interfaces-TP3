@@ -1,0 +1,2826 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joya</title>
+    <link rel="icon" type="image/svg+xml" href="images/svg/Diamante-transformed-PhotoRoom 1.svg">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+</head>
+
+<body>
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">
+            <span id="loading-progress">0</span>%
+        </div>
+    </div>
+    <header class="navbar">
+        <div class="navbarParte">
+            <div class="iconoMedio">
+                <img id="botonMenuHamburguesa" src="images/svg/Hamburguesa cerrada.svg" alt="Hamburguesa">
+            </div>
+            <a href="juegos.html" class="iconoMedio">
+                <img src="images/svg/Diamante-transformed-PhotoRoom 1.svg" alt="Logo">
+            </a>
+        </div>
+
+        <div class="navbarParte">
+            <div class="iconoMedio">
+                <img src="images/svg/Carrito.svg" alt="Carrito">
+            </div>
+            <div id="botonPerfilHamburguesa" class="iconoMedio fotoPerfil">
+                <img src="images/Fotos de perfil/Foto de perfil.svg" alt="Perfil">
+            </div>
+        </div>
+    </header>
+    <div id="perfilHamburguesa" class="perfilHamburguesa">
+        <ul class="botonPerfil">
+            <li>
+                <h2>Hola, Maestro</h2>
+            </li>
+            <li>
+                <h4>Mi perfil</h4>
+            </li>
+            <li>
+                <h4>Editar perfil</h4>
+            </li>
+            <li>
+                <h4>Mis juegos</h4>
+            </li>
+            <li>
+                <h4>Configuracion</h4>
+            </li>
+            <li>
+                <h4><a href="index.html">Cerrar sesion</a></h4>
+            </li>
+            <li>
+                <img src="images/svg/Linea.svg" alt="separacion">
+            </li>
+            <li>
+                <h4>Soporte</h4>
+            </li>
+        </ul>
+    </div>
+    <div class="menuHamburguesa" id="menuHamburguesa">
+        <div class="hamburguesaArriba">
+            <ul>
+                <li class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Recientes.svg" alt="Recientes">
+                    </div>
+                    <h4>Recientes</h4>
+                </li>
+                <li>
+                    <img class="separacion" src="images/svg/Linea.svg" alt="Separacion">
+                </li>
+                <a href="#accion" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Accion.svg" alt="Acción">
+                    </div>
+                    <h4>Acción</h4>
+                </a>
+                <a href="#aventura" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Aventura.svg" alt="Aventura">
+                    </div>
+                    <h4>Aventura</h4>
+                </a>
+                <a href="#carreras" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Carreras.svg" alt="Carreras">
+                    </div>
+                    <h4>Carreras</h4>
+                </a>
+                <a href="#deportes" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Deportes.svg" alt="Deportes">
+                    </div>
+                    <h4>Deportes</h4>
+                </a>
+                <a href="#divertidos" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Divertidos.svg" alt="Divertidos">
+                    </div>
+                    <h4>Divertidos</h4>
+                </a>
+                <a href="#estrategia" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Estrategia.svg" alt="Estrategia">
+                    </div>
+                    <h4>Estrategia</h4>
+                </a>
+                <a href="#infantil" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Infantil.svg" alt="Infantil">
+                    </div>
+                    <h4>Infantil</h4>
+                </a>
+                <a href="#mesa" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/DeMesa.svg" alt="De Mesa">
+                    </div>
+                    <h4>Mesa</h4>
+                </a>
+                <a href="#motos" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Motos.svg" alt="Motos">
+                    </div>
+                    <h4>Motos</h4>
+                </a>
+                <a href="#multijugador" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Multijugador.svg" alt="Multijugador">
+                    </div>
+                    <h4>Multijugador</h4>
+                </a>
+                <a href="#retro" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Retro.svg" alt="Retro">
+                    </div>
+                    <h4>Retro</h4>
+                    </li>
+                    <a href="#terror" class="botonHamburguesa">
+                        <div class="iconoChico">
+                            <img src="images/svg/Categorias/Terror.svg" alt="Terror">
+                        </div>
+                        <h4>Terror</h4>
+                    </a>
+            </ul>
+        </div>
+        <div class="hamburguesaAbajo">
+            <ul>
+                <li>
+                    <img class="separacion" src="images/svg/Linea.svg" alt="Separacion">
+                </li>
+                <a href="https://www.facebook.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Facebook.svg" alt="Facebook">
+                    </div>
+                    <h4>Facebook</h4>
+                </a>
+                <a href="https://www.instagram.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Instagram.svg" alt="Instagram">
+                    </div>
+                    <h4>Instagram</h4>
+                </a>
+                <a href="https://twitter.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Twitter.svg" alt="Twitter">
+                    </div>
+                    <h4>Twitter</h4>
+                </a>
+                <a href="https://www.tiktok.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/TikTok.svg" alt="TikTok">
+                    </div>
+                    <h4>TikTok</h4>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <main>
+
+        <div class="container">
+            <h1 class="titulo tituloCentrado">TOP 3 JUEGOS DE LA SEMANA EN JOYA</h1>
+            <section class="carousel">
+                <div class="carouselContainer">
+                    <div class="carouselItem carouselItem1">
+                        <article class="bigCard">
+                            <div class="cardImage">
+                                <img src="images/Juegos/Bartender The Celeb Mix.webp"
+                                    alt="Bartender The Celeb Mix.webp">
+                            </div>
+                            <div class="bigCardShadow">
+                            </div>
+                            <div class="playIcon">
+                                <img src="images/svg/Jugar.svg" alt="Jugar">
+                            </div>
+                            <div class="bigCardInfo">
+                                <h3>Divertidos</h3>
+                                <h2>Bartender The Celeb Mix</h2>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carouselItem carouselItem2">
+                        <article class="bigCard">
+                            <div class="cardImage">
+                                <img src="images/Juegos/4 En linea Homero VS Bart.webp"
+                                    alt="4 En linea Homero VS Bart.webp">
+                            </div>
+                            <div class="bigCardShadow">
+                            </div>
+                            <a href="juego.html" class="playIcon">
+                                <img src="images/svg/Jugar.svg" alt="Jugar">
+                            </a>
+                            <div class="bigCardInfo">
+                                <h3>Estrategia</h3>
+                                <h2>4 En linea Homero vs Bart</h2>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carouselItem carouselItem3">
+                        <article class="bigCard">
+                            <div class="cardImage">
+                                <img src="images/Juegos/FireBoy & WaterGirl 6.webp" alt="FireBoy & WaterGirl 6.webp">
+                            </div>
+                            <div class="bigCardShadow">
+                            </div>
+                            <div class="playIcon">
+                                <img src="images/svg/Jugar.svg" alt="Jugar">
+                            </div>
+                            <div class="bigCardInfo">
+                                <h3>Multijugador</h3>
+                                <h2>FireBoy & WaterGirl 6</h2>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carouselControlsContainer">
+
+                    </div>
+                </div>
+            </section>
+            <h2 class="titulo">Porque elegiste 4 En Linea Homero vs Bart</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Plants vs Zombies 2.webp" alt="Plants vs Zombies 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Plants vs Zombies 2</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Hobo 2.webp" alt="Hobo 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Hobo 2</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Galaxy-Life.webp" alt="Galaxy-Life.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Galaxy Life</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Five Nights at Freddy's.webp"
+                                    alt="Five Nights at Freddy's.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Five Nights at Freddy's</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Red-Ball-4.webp" alt="Red-Ball-4.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Red Ball 4</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/UNO.webp" alt="UNO.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">UNO</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Super Mario 64.webp" alt="Super Mario 64.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">Super Mario 64</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Moto X3M.webp" alt="Moto X3M.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Moto X3M</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Sky Riders.webp" alt="Sky Riders.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">Sky Riders</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>Gratis</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Pou.webp" alt="Pou.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Pou</h4>
+                                </div>
+                                <div class="cardButton">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="accion" class="titulo">Acción</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Happy Wheels.webp" alt="Happy Wheels.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Happy Wheels</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$5000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Elden Ring.webp" alt="Elden Ring.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Elden Ring</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Cyberpunk 2077.webp" alt="Cyberpunk 2077.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Cyberpunk 2077</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/God of War.webp" alt="God of War.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">God of War</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Hitman 3.webp" alt="Hitman 3.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Hitman 3</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2400</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Far Cry 6.webp" alt="Far Cry 6.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Far Cry 6</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Deathloop.webp" alt="Deathloop.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Deathloop</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Returnal.webp" alt="Returnal.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Returnal</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Ratchet & Clank - Rift Apart.webp"
+                                    alt="Ratchet & Clank - Rift Apart.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Ratchet & Clank: Rift Apart</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1080</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Dragon Ball Xenoverse 2.webp"
+                                    alt="Dragon Ball Xenoverse 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Acción</h5>
+                                    <h4 class="cardNombre">Dragon Ball Xenoverse 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="aventura" class="titulo">Aventura</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/The Legend of Zelda - Breath of the Wild.webp"
+                                    alt="The Legend of Zelda - Breath of the Wild.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">The Legend of Zelda: Breath of the Wild</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Red Dead Redemption 2.webp" alt="Red Dead Redemption 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">Red Dead Redemption 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Marvel's Spider-Man.webp" alt="Marvel's Spider-Man.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">Marvel's Spider-Man</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Assassin's Creed Odyssey.webp"
+                                    alt="Assassin's Creed Odyssey.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">Assassin's Creed Odyssey</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2400</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Horizon Zero Dawn.webp" alt="Horizon Zero Dawn.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">Horizon Zero Dawn</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2800</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Uncharted 4.webp" alt="Uncharted 4.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">Uncharted 4</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1550</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Control.webp" alt="Control.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">Control</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Death Stranding.webp" alt="Death Stranding.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">Death Stranding</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/A Plague Tale - Innocence.webp"
+                                    alt="A Plague Tale - Innocence.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">A Plague Tale: Innocence</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/The Last of Us Part II.webp" alt="The Last of Us Part II.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Aventura</h5>
+                                    <h4 class="cardNombre">The Last of Us Part II</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="carreras" class="titulo">Carreras</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Forza Horizon 5.webp" alt="Forza Horizon 5.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">Forza Horizon 5</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Gran Turismo Sport.webp" alt="Gran Turismo Sport.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">Gran Turismo Sport</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/F1 2021.webp" alt="F1 2021.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">F1 2021</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Need for Speed Heat.webp" alt="Need for Speed Heat.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">Need for Speed Heat</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/WRC 10.webp" alt="WRC 10.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">WRC 10</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2400</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Hot Wheels Unleashed.webp" alt="Hot Wheels Unleashed.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">Hot Wheels Unleashed</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/DIRT 5.webp" alt="DIRT 5.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">DIRT 5</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2450</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/The Crew 2.webp" alt="The Crew 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">The Crew 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Mario Kart 8 Deluxe.webp" alt="Mario Kart 8 Deluxe.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">Mario Kart 8 Deluxe</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Project CARS 3.webp" alt="Project CARS 3.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Carreras</h5>
+                                    <h4 class="cardNombre">Project CARS 3</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="deportes" class="titulo">Deportes</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$5000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/FIFA 23.webp" alt="FIFA 23.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">FIFA 23</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/NBA 2K23.webp" alt="NBA 2K23.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">NBA 2K23</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Madden NFL 23.webp" alt="Madden NFL 23.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">Madden NFL 23</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/MLB The Show 23.webp" alt="MLB The Show 23.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">MLB The Show 23</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/NHL 23.webp" alt="NHL 23.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">NHL 23</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3800</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Tony Hawk Pro Skater 1+2.webp"
+                                    alt="Tony Hawk Pro Skater 1+2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">Tony Hawk Pro Skater 1+2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2400</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/eFootball PES 2021.webp" alt="eFootball PES 2021.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">eFootball PES 2021</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/WWE 2K23.webp" alt="WWE 2K23.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">WWE 2K23</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Rory Mcllroy PGA Tour.webp" alt="Rory Mcllroy PGA Tour.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">Rory Mcllroy PGA Tour</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Riders Republic.webp" alt="Riders Republic.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Deportes</h5>
+                                    <h4 class="cardNombre">Riders Republic</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="divertidos" class="titulo">Divertidos</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$800</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Valheim.webp" alt="Valehim.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Valheim</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$180</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Stardew Valley.webp" alt="Stardew Valley.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Stardew Valley</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Minecraft.webp" alt="Minecraft.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Minecraft</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$770</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Portal 2.webp" alt="Portal 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Portal 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$225</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Cuphead.webp" alt="Cuphead.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Cuphead</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Overcooked.webp" alt="Overcooked.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Overcooked</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Fall Guys.webp" alt="Fall Guys.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Fall Guys</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Among Us.webp" alt="Among Us.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Among Us</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Rocket League.webp" alt="Rocket League.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Rocket League</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Overwatch.webp" alt="Overwatch.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Divertidos</h5>
+                                    <h4 class="cardNombre">Overwatch</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="estrategia" class="titulo">Estrategia</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Hero's Hour.webp" alt="Hero's Hour.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Hero's Hour</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Steel Division 2.webp" alt="Steel Division 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Steel Division 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Hearts of Iron IV.webp" alt="Hearts of Iron IV.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Hearts of Iron IV</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Crusader Kings III.webp" alt="Crusader Kings III.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Crusader Kings III</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/7 Days To Die.webp" alt="7 Days To Die.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">7 Days To Die</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$150</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Black Desert.webp" alt="Black Desert.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Black Desert</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Planet Zoo.webp" alt="Planet Zoo.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Planet Zoo</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Cities Skylines 2.webp" alt="Cities Skylines 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Cities Skylines 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Age of Empires IV.webp" alt="Age of Empires IV.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Age of Empires IV</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$900</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Baldur's Gate 3.webp" alt="Baldur's Gate 3.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Estrategia</h5>
+                                    <h4 class="cardNombre">Baldur's Gate 3</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="infantil"class="titulo">Infantil</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Wall-E.webp" alt="Wall-E.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Wall-E</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Narnia.webp" alt="Narnia.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Narnia</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Barnyard.webp" alt="Barnyard.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Barnyard</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Los Increíbles.webp" alt="Los Increíbles.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Los Increíbles</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Harry Potter y el Prisionero de Azkaban.webp"
+                                    alt="Harry Potter y el Prisionero de Azkaban.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Harry Potter y el Prisionero de Azkaban</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$450</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Toy Story 3.webp" alt="Toy Story 3.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Toy Story 3</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Madagascar.webp" alt="Madagascar.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Madagascar</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Shrek 2.webp" alt="Shrek 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Shrek 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/The Simpsons Hit & Run.webp" alt="The Simpsons Hit & Run.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">The Simpsons Hit & Run</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Cars 2.webp" alt="Cars 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Infantil</h5>
+                                    <h4 class="cardNombre">Cars 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="mesa" class="titulo">Mesa</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Terraforming Mars.webp" alt="Terraforming Mars.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Terraforming Mars</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$130</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Sagrada.webp" alt="Sagrada.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Sagrada</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Pandemic.webp" alt="Pandemic.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Pandemic</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Gloomhaven.webp" alt="Gloomhaven.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Gloomhaven</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Wingspan.webp" alt="Wingspan.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Wingspan</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$640</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Scythe.webp" alt="Scythe.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Scythe</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$225</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Tabletop Simulator.webp" alt="Tabletop Simulator.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Tabletop Simulator</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$307</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Carcassonne.webp" alt="Carcassonne.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Carcassonne</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Ticket to Ride.webp" alt="Ticket to Ride.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Ticket to Ride</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Through the Ages.webp" alt="Through the Ages.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Mesa</h5>
+                                    <h4 class="cardNombre">Through the Ages</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="motos" class="titulo">Motos</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$280</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Descenders.webp" alt="Descenders.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Descenders</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Ride 3.webp" alt="Ride 3.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Ride 3</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/MotoGP 21.webp" alt="MotoGP 21.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">MotoGP 21</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Ride 4.webp" alt="Ride 4.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Ride 4</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Trials Rising.webp" alt="Trials Rising.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Trials Rising</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$5000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/MXGP 2021.webp" alt="MXGP 2021.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">MXGP 2021</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2400</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/TT Isle of Man - Ride on the Edge 2.webp"
+                                    alt="TT Isle of Man - Ride on the Edge 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">TT Isle of Man - Ride on the Edge 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Urban Trial Playground.webp" alt="Urban Trial Playground.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Urban Trial Playground</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$225</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Road Redemption.webp" alt="Road Redemption.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Road Redemption</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$180</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Moto Racer 4.webp" alt="Moto Racer 4.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Motos</h5>
+                                    <h4 class="cardNombre">Moto Racer 4</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="multijugador" class="titulo">Multijugador</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/DayZ.webp" alt="DayZ.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">DayZ</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/It Takes Two.webp" alt="It Takes Two.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">It Takes Two</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$8000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Sea of Thieves.webp" alt="Sea of Thieves.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">Sea of Thieves</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$5000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Ghost Recon.webp" alt="Ghost Recon.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">Ghost Recon</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Rainbow Six Siege.webp" alt="Rainbow Six Siege.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">Rainbow Six Siege</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/The Division 2.webp" alt="The Division 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">The Division 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Battlefield IV.webp" alt="Battlefield IV.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">Battlefield IV</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$10000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/ARK Survival Evolved.webp" alt="ARK Survival Evolved.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">ARK Survival Evolved</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$9000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/New World.webp" alt="New World.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">New World</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Naraka Bladepoint.webp" alt="Naraka Bladepoint.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Multijugador</h5>
+                                    <h4 class="cardNombre">Naraka Bladepoint</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="retro" class="titulo">Retro</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1600</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Megaman Legacy Collection.webp"
+                                    alt="Megaman Legacy Collection.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">Megaman Legacy Collection</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Worms Armaggedon.webp" alt="Worms Armaggedon.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">Worms Armaggedon</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$225</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/RollerCoaster Tycoon Adventures.webp"
+                                    alt="RollerCoaster Tycoon Adventures.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">RollerCoaster Tycoon Adventures</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$4200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/System Shock.webp" alt="System Shock.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">System Shock</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/SimCity2000.webp" alt="SimCity2000.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">SimCity2000</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Quake.webp" alt="Quake.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">Quake</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$180</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Day of the Tentacle Remastered.webp"
+                                    alt="Day of the Tentacle Remastered.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">Day of the Tentacle Remastered</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1400</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Baldurs Gate Enhanced Edition.webp"
+                                    alt="Baldurs Gate Enhanced Edition.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">Baldurs Gate Enhanced Edition</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$150</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Final Fantasy VII.webp" alt="Final Fantasy VII.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">Final Fantasy VII</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$3500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/DOOM.webp" alt="DOOM.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Retro</h5>
+                                    <h4 class="cardNombre">DOOM</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+
+            <h2 id="terror" class="titulo">Terror</h2>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2300</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Resident Evil 2.webp" alt="Resident Evil 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Resident Evil 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1000</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Amnesia.webp" alt="Amnesia.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Amnesia: Rebirth</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$900</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Phasmophobia.webp" alt="Phasmophobia.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Phasmophobia</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/The Medium.webp" alt="The Medium.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">The Medium</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2100</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Little Nightmares II.webp" alt="Little Nightmares II.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Little Nightmares II</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Outlast 2.webp" alt="Outlast 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Outlast 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1550</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Alien Isolation.webp" alt="Alien Isolation.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Alien: Isolation</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$1500</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/SOMA.webp" alt="SOMA.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">SOMA</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2700</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/Until Dawn.webp" alt="Until Dawn.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">Until Dawn</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <div class="cardContainer">
+                                <div class="cardPrecio">
+                                    <p>$2200</p>
+                                </div>
+                            </div>
+                            <div class="cardImage">
+                                <img src="images/Juegos/The Evil Within 2.webp" alt="The Evil Within 2.webp">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardTextos">
+                                    <h5 class="cardCategoria">Terror</h5>
+                                    <h4 class="cardNombre">The Evil Within 2</h4>
+                                </div>
+                                <div class="cardButton cardButtonPaga">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footSuperior">
+            <div>
+                <a class="footSuperiorIzq" href="juegos.html">
+                    <img src="images/svg/Diamante-transformed-PhotoRoom 1.svg" alt="Logo">
+                    <h2>Joya</h2>
+                </a>
+            </div>
+            <div class="footRedes">
+                <img src="images/svg/Facebook.svg" alt="Logo">
+                <img src="images/svg/Instagram.svg" alt="Logo">
+                <img src="images/svg/Twitter.svg" alt="Logo">
+            </div>
+        </div>
+        <img class="footMedio" src="images/svg/Linea.svg" alt="logo">
+        <div class="footInferior">
+            <div>
+                <h3>Categorías</h3>
+                <h5>Valoraciones</h5>
+                <h5>Lanzamientos</h5>
+                <h5>Top 100 juegos</h5>
+                <h5>Todos los juegos</h5>
+            </div>
+            <div>
+                <h3>Mi cuenta</h3>
+                <h5>Logros</h5>
+                <h5>Ingresá</h5>
+                <h5>Idiomas y preferencias</h5>
+                <h5>Registro de transacciones</h5>
+            </div>
+            <div>
+                <h3>Acerca de nosotros</h3>
+                <h5>Contacto</h5>
+                <h5>Descripción breve</h5>
+                <h5>Premios y reconocimientos</h5>
+                <h5>Comentarios de la comunidad</h5>
+            </div>
+            <div>
+                <h3>Ayuda</h3>
+                <h5>Soporte técnico</h5>
+                <h5>Problemas comunes</h5>
+                <h5>Términos y condiciones</h5>
+                <h5>Preguntas frecuentes(FAQ)</h5>
+            </div>
+        </div>
+    </footer>
+    <script src="js/card.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+
+</html>

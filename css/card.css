@@ -1,0 +1,360 @@
+main{
+    text-align: center;
+}
+.card {    
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 250px;
+}
+.cardContainer{
+    position: relative;
+}
+.cardPrecio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 8px;
+    border-radius: 0 0 30px 0;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.cardPrecio p {
+    text-align: center;
+    margin-left: 3px;
+    padding: 2px 12px;
+    line-height: 0;
+}
+
+.cardImage {
+    line-height: 0;
+}
+
+.cardImage img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: white;
+    height: 50px;
+}
+
+.cardButton {
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    background-image: url(../images/svg/Jugar.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: black;
+    width: 45px;
+}
+
+.cardButtonPaga {
+    background-image: url(../images/svg/Añadir\ al\ carrito.svg);
+    transition: background-image 300ms ease;
+}
+
+.cardButtonAñadidoAlCarrito {
+    background-image: url(../images/svg/Añadido\ al\ carrito.svg);
+    transition: background-image 300ms ease;
+}
+
+.cardButtonAñadidoAlCarrito:hover {
+    background-image: url(../images/svg/Eliminar\ del\ carrito.svg);
+}
+.cardTextos{
+    width: 75%;
+    overflow: hidden;
+}
+.cardNombre {
+    color: black;
+}
+
+.cardCategoria {
+    color: #00000050;
+}
+
+.cardCategoria, .cardNombre{
+    margin: 0;
+    text-align: initial;
+}
+
+
+
+.bigCard {
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.bigCardShadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, transparent 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s;
+}
+
+
+.cardImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playIcon {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    padding-bottom: 5%;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.playIcon img {
+    width: 100%;
+    display: block;
+}
+
+.bigCardInfo h3{
+    opacity: 0.9;
+}
+
+.bigCardInfo h3,
+.bigCardInfo h2 {
+    margin: 5px;
+}
+
+.bigCardInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    transition: 300ms;
+}
+
+
+
+
+.carouselChico{
+    position: relative;
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+.carouselChico ::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselChicoContainer{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+.carouselChicoCardContainer{
+    width: fit-content;
+    position: relative;
+    align-items: center;
+    display: flex;
+    max-width: fit-content;
+    transition: 500ms ease;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+.carousel {
+    width: 80%;
+    margin: 0 auto 30px auto;
+
+}
+
+.carousel a{
+    cursor: default;
+}
+
+.carouselContainer {
+    overflow: hidden;
+    aspect-ratio: 15 / 6;
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    perspective: 100vmax;
+}
+
+.carouselItem {
+    opacity: 0;
+    position: absolute;
+    transition: all 500ms ease-in-out;
+    z-index: 0;
+    border-radius: 30px;
+    background-size: contain;
+}
+
+.carouselItem1,
+.carouselItem3 {
+    opacity: 0.8;
+    width: 60%;
+    z-index: 1;
+}
+
+.carouselItem1 {
+    left: 20%;
+    transform: translatex(-50%) rotateY(-30deg);
+}
+.carouselItem3 {
+    left: 80%;
+    transform: translateX(-50%) rotateY(30deg);
+}
+
+.carouselItem2 {
+    box-shadow: -2px 5px 33px 6px #000000ab;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 2;
+}
+
+.carouselItem2:hover .bigCardShadow{
+    height: 100%;
+}
+.carouselItem2:hover .playIcon{
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+.carouselControlsContainer button, .carouselChicoControls button {
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    cursor: pointer;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--violeta-1);
+    width: 4%;
+    border: none;
+    z-index: 3;
+}
+
+.carouselChicoControls button{
+    width: 3%;
+}
+
+
+.carouselControlPrevious {
+    left: 2%;
+    background-image: url(../images/svg/Botones\ carrousel/Flecha\ izquierda.svg);
+}
+.carouselControlNext{
+    right: 2%;
+    background-image: url(../images/svg/Botones\ carrousel/Flecha\ derecha.svg);
+}
+.carouselChicoControls .carouselChicoButtonRight{
+    transform: translate(70%, -50%);
+    right: 5px;
+    background-image: url(../images/svg/Botones\ carrousel/Flecha\ derecha.svg);
+}
+
+.carouselChicoControls .carouselChicoButtonLeft{
+    transform: translate(-70%, -50%);
+    left: 5px;
+    background-image: url(../images/svg/Botones\ carrousel/Flecha\ izquierda.svg);
+}
+
+@media screen and (max-width: 1280px) {
+    .card{
+        width: 200px;
+    }
+    .cardInfo{
+        height: 40px;
+    }
+    .carouselControlsContainer button{
+        width: 8%;
+   }
+    .carouselChicoControls button{
+        width: 6%;
+    }
+    .carouselChico .carouselChicoButtonLeft{
+        transform: translate(-10%, -50%)
+    }
+    .carouselChico .carouselChicoButtonRight{
+        transform: translate(10%, -50%)
+    }
+    .carouselItem2{
+        width: 90%;
+        box-shadow: none;
+    }
+    .carouselItem1,
+    .carouselItem3 {
+        width: 70%;
+    }
+
+    .carouselItem1 {
+        left: 15%;
+    }
+    .carouselItem3 {
+        left: 85%;
+    }
+    .carouselContainer{
+        aspect-ratio: 11.5 / 6;
+    }
+    .cardCategoria{
+        display: none;
+    }
+    .cardNombre{
+        line-height: 14px;
+    }
+    .bigCardInfo {
+        padding: 10px;
+    }
+
+}
+

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 En Linea Homero vs Bart</title>
+    <link rel="icon" type="image/svg+xml" href="images/svg/Diamante-transformed-PhotoRoom 1.svg">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/juego.css">
+    <link rel="stylesheet" href="css/gameMenu.css">
+    <link rel="stylesheet" href="css/gameStyle.css">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbarParte">
+            <div class="iconoMedio">
+                <img id="botonMenuHamburguesa" src="images/svg/Hamburguesa cerrada.svg" alt="Hamburguesa">
+            </div>
+            <a href="juegos.html" class="iconoMedio">
+                <img src="images/svg/Diamante-transformed-PhotoRoom 1.svg" alt="Logo">
+            </a>
+        </div>
+
+        <div class="navbarParte">
+            <div class="iconoMedio">
+                <img src="images/svg/Carrito.svg" alt="Carrito">
+            </div>
+            <div id="botonPerfilHamburguesa" class="iconoMedio fotoPerfil">
+                <img src="images/Fotos de perfil/Foto de perfil.svg" alt="Perfil">
+            </div>
+        </div>
+    </header>
+    <div id="perfilHamburguesa" class="perfilHamburguesa">
+        <ul class="botonPerfil">
+            <li>
+                <h2>Hola, Maestro</h2>
+            </li>
+            <li>
+                <h4>Mi perfil</h4>
+            </li>
+            <li>
+                <h4>Editar perfil</h4>
+            </li>
+            <li>
+                <h4>Mis juegos</h4>
+            </li>
+            <li>
+                <h4>Configuracion</h4>
+            </li>
+            <li>
+                <h4><a href="index.html">Cerrar sesion</a></h4>
+            </li>
+            <li>
+                <img src="images/svg/Linea.svg" alt="separacion">
+            </li>
+            <li>
+                <h4>Soporte</h4>
+            </li>
+        </ul>
+    </div>
+    <div class="menuHamburguesa" id="menuHamburguesa">
+        <div class="hamburguesaArriba">
+            <ul>
+                <li class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Recientes.svg" alt="Recientes">
+                    </div>
+                    <h4>Recientes</h4>
+                </li>
+                <li>
+                    <img class="separacion" src="images/svg/Linea.svg" alt="Separacion">
+                </li>
+                <a href="juegos.html#accion" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Accion.svg" alt="Acción">
+                    </div>
+                    <h4>Acción</h4>
+                </a>
+                <a href="juegos.html#aventura" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Aventura.svg" alt="Aventura">
+                    </div>
+                    <h4>Aventura</h4>
+                </a>
+                <a href="juegos.html#carreras" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Carreras.svg" alt="Carreras">
+                    </div>
+                    <h4>Carreras</h4>
+                </a>
+                <a href="juegos.html#deportes" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Deportes.svg" alt="Deportes">
+                    </div>
+                    <h4>Deportes</h4>
+                </a>
+                <a href="juegos.html#divertidos" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Divertidos.svg" alt="Divertidos">
+                    </div>
+                    <h4>Divertidos</h4>
+                </a>
+                <a href="juegos.html#estrategia" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Estrategia.svg" alt="Estrategia">
+                    </div>
+                    <h4>Estrategia</h4>
+                </a>
+                <a href="juegos.html#infantil" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Infantil.svg" alt="Infantil">
+                    </div>
+                    <h4>Infantil</h4>
+                </a>
+                <a href="juegos.html#mesa" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/DeMesa.svg" alt="De Mesa">
+                    </div>
+                    <h4>Mesa</h4>
+                </a>
+                <a href="juegos.html#motos" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Motos.svg" alt="Motos">
+                    </div>
+                    <h4>Motos</h4>
+                </a>
+                <a href="juegos.html#multijugador" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Multijugador.svg" alt="Multijugador">
+                    </div>
+                    <h4>Multijugador</h4>
+                </a>
+                <a href="juegos.html#retro" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Categorias/Retro.svg" alt="Retro">
+                    </div>
+                    <h4>Retro</h4>
+                    </li>
+                    <a href="juegos.html#terror" class="botonHamburguesa">
+                        <div class="iconoChico">
+                            <img src="images/svg/Categorias/Terror.svg" alt="Terror">
+                        </div>
+                        <h4>Terror</h4>
+                    </a>
+            </ul>
+        </div>
+        <div class="hamburguesaAbajo">
+            <ul>
+                <li>
+                    <img class="separacion" src="images/svg/Linea.svg" alt="Separacion">
+                </li>
+                <a href="https://www.facebook.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Facebook.svg" alt="Facebook">
+                    </div>
+                    <h4>Facebook</h4>
+                </a>
+                <a href="https://www.instagram.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Instagram.svg" alt="Instagram">
+                    </div>
+                    <h4>Instagram</h4>
+                </a>
+                <a href="https://twitter.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/Twitter.svg" alt="Twitter">
+                    </div>
+                    <h4>Twitter</h4>
+                </a>
+                <a href="https://www.tiktok.com/" class="botonHamburguesa">
+                    <div class="iconoChico">
+                        <img src="images/svg/TikTok.svg" alt="TikTok">
+                    </div>
+                    <h4>TikTok</h4>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+    <main>
+        <div class="breadCrumbs">
+            <h4><a href="juegos.html">Joya</a> > <a href="juegos.html#estrategia">Estrategia</a> > <a
+                    href="juego.html">4 En Linea Homero vs Bart</a></h4>
+        </div>
+        <div class="pantalla">
+            <div class="pantallaJuego">
+                <div class="cuatroEnLinea">
+                    <div id="init_juego" class="contMenu">
+                        <div class="gameMen">
+                            <div class="inputs">
+                                <form class="size">
+                                    <h3 class="titulo tituloCentrado">Jugador 1: Seleccione personaje</h3>
+                                    <label>
+                                        <input type="radio" class="jugador1" name="jugador1" value="Homero" checked>
+                                        <img src="images/4 en Linea/Tablero/Ficha Homero amarilla.png" alt="Homero">
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="jugador1" name="jugador1" value="Bart">
+                                        <img src="images/4 en Linea/Tablero/Ficha Bart amarilla.png" alt="Bart">
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="jugador1" name="jugador1" value="Marge">
+                                        <img src="images/4 en Linea/Tablero/Ficha Marge amarilla.png" alt="Marge">
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="jugador1" name="jugador1" value="Lisa">
+                                        <img src="images/4 en Linea/Tablero/Ficha Lisa amarilla.png" alt="Lisa">
+                                    </label><br>
+                                </form>
+                                <form class="size">
+                                    <h3 class="titulo tituloCentrado">Seleccione modo de juego</h3>
+                                    <label>
+                                        <input type="radio" class="cantidad" name="boardSize" value="4" checked>
+                                        <h3>4 en línea</h3>
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="cantidad" name="boardSize" value="5">
+                                        <h3>5 en línea</h3>
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="cantidad" name="boardSize" value="6">
+                                        <h3>6 en línea</h3>
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="cantidad" name="boardSize" value="7">
+                                        <h3>7 en línea</h3>
+                                    </label><br>
+                                </form>
+                                <form class="size">
+                                    <h3 class="titulo tituloCentrado">Jugador 2: Seleccione personaje</h3>
+                                    <label>
+                                        <input type="radio" class="jugador2" name="jugador2" value="Homero">
+                                        <img src="images/4 en Linea/Tablero/Ficha Homero roja.png" alt="Homero">
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="jugador2" name="jugador2" value="Bart" checked>
+                                        <img src="images/4 en Linea/Tablero/Ficha Bart roja.png" alt="Bart">
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="jugador2" name="jugador2" value="Marge">
+                                        <img src="images/4 en Linea/Tablero/Ficha Marge roja.png" alt="Marge">
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" class="jugador2" name="jugador2" value="Lisa">
+                                        <img src="images/4 en Linea/Tablero/Ficha Lisa roja.png" alt="Lisa">
+                                    </label><br>
+                                </form>
+                            </div>
+                            <button id="btn_play" class="boton botonPrimarioVioleta botonJugar">
+                                <h3>JUGAR</h3>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="contenedor_juego" class="juego inactive">
+                        <!-- ACA IRIA JUGABILIDAD-->
+                        <div class="options">
+                            <a id="btn_reset" class="">
+                                <img class="" id="fichaBtn" src="/images/4 en Linea/Opciones/Reinicio.png">
+                                <h3>Reiniciar</h3>
+                            </a>
+                            <div id="tmp">
+                                <h3>Tiempo restante</h3>
+                                <h3 id="cronometro"></h3>
+                            </div>
+                            <div id="theWinnerIs" class="inactive">
+                                <h3 id="quienGano"></h3>
+                                <h3 id="sinTiempo"></h3>
+                            </div>
+                            <a id="btn_exit" class="">
+                                <img class="" id="fichaBtn" src="/images/4 en Linea/Opciones/Salir.png">
+                                <h3>Salir</h3>
+                            </a>
+                        </div>
+                        <!-- ACA IRIA PANTALLA PRESENTACION DEL JUEGO-->
+                        <section class="invisible" id="tablero">
+
+                            <div class="turno player1" id="player1">
+                                <img id="fichaPlayer1" src="">
+                                <h3>Turno de</h3>
+                                <h3 id="turno1"></h3>
+                            </div>
+
+                            <!-- ACA IRIA EL TABLERO DEL JUEGO-->
+                            <canvas id="canvas" class="canvas"></canvas>
+
+                            <div class="turno player2 invisible" id="player2">
+                                <img id="fichaPlayer2" src="">
+                                <h3>Turno de</h3>
+                                <h3 id="turno2"></h3>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+
+                <div class="barraInferior">
+                    <h4>4 En Linea Homero vs Bart</h4>
+                    <div class="btnsBarraInferior">
+                        <div class="btnsBarraInferior">
+                            <img id="btnCompartir" src="images/svg/Compartir.svg" alt="Compartir">
+                            <div class="copiarUrl">
+                                <div class="redes">
+                                    <img src="images/svg/Facebook.svg" alt="Facebook">
+                                    <img src="images/svg/Instagram.svg" alt="Instagram">
+                                    <img src="images/svg/Twitter.svg" alt="Twitter">
+                                    <img src="images/svg/TikTok.svg" alt="TikTok">
+                                </div>
+                                <div class="url">
+                                    <p>Joya.com/jugar/4_en_linea_homero_vs_bart</p>
+                                    <button class="boton botonPrimarioVioleta">
+                                        <img src="images/svg/Cadena.svg" alt="Compartir">
+                                        <h4>Compartir</h4>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img id="btn_fullscreen" src="images/svg/Pantalla completa.svg" alt="Pantalla completa">
+                    </div>
+                </div>
+            </div>
+
+            <div class="instrucciones">
+                <div class="tituloCaracteristica">
+                    <img src="images/svg/Instrucciones.svg" alt="Instrucciones">
+                    <h3>Instrucciones</h3>
+                </div>
+                <h5> 1. Elige a tu personaje para comenzar la partida.</h5>
+                <h5> 2. En tu turno, selecciona una columna en el tablero donde quieras colocar tu ficha.</h5>
+                <h5> 3. El objetivo es conseguir una línea con la cantidad de fichas necesarias (horizontal, vertical o
+                    diagonal) antes que tu oponente.</h5>
+                <h5> 4. ¡Usa tu ingenio y estrategia para bloquear a tu oponente mientras intentas formar tu propia
+                    línea ganadora!</h5>
+                <h5> 5. ¡El primer jugador en conseguir 4 en raya gana la partida y la gloria de Springfield!</h5><br>
+                <div class="tituloCaracteristica">
+                    <img src="images/svg/Tips.svg" alt="Tips">
+                    <h3>Tips</h3>
+                </div>
+                <h5> - Planea tus movimientos: Antes de colocar una ficha en el tablero, piensa en cómo afectará tu
+                    estrategia a corto y largo plazo. Trata de prever las jugadas de tu oponente y busca oportunidades
+                    para formar tu línea ganadora.</h5>
+                <h5> - Bloquea a tu oponente: No solo te enfoques en tus propias jugadas, también observa atentamente
+                    las fichas de tu oponente. Bloquear sus movimientos y evitar que forme una línea es una estrategia
+                    sólida.</h5>
+                <h5> - Adapta tu estrategia: Recuerda que puedes jugar a 4 en línea, 5 en línea, 6 en línea o 7 en
+                    línea. Ajusta tu estrategia según la cantidad de fichas necesarias para ganar. La flexibilidad es la
+                    clave del éxito.</h5>
+                <h5> - Practica, practica, practica: La práctica hace al maestro. Cuantas más partidas juegues, mejor te
+                    volverás en la toma de decisiones y la anticipación de los movimientos de tu oponente.</h5>
+            </div>
+        </div>
+        <div class="detalles">
+            <div class="detallesIzquierda">
+                <div class="descripcion">
+                    <div class="tituloCaracteristica">
+                        <img src="images/svg/Descripcion.svg" alt="Descripcion">
+                        <h2>Descripción</h2>
+                    </div>
+                    <img src="images/svg/Linea.svg" alt="Separador">
+                    <h5>En un soleado día en Springfield, Bart Simpson estaba aburrido y dando un paseo por la ciudad.
+                        Fue entonces cuando se encontró con su padre, Homero, disfrutando de su tiempo libre en la
+                        tienda de cómics local. Después de una breve conversación sobre quién era el mejor en los
+                        juegos, Bart desafió a Homero a una emocionante partida de "4 en Línea". El ganador se jactaría
+                        de ser el verdadero campeón de Springfield.</h5>
+                    <h5>Homero aceptó el desafío con entusiasmo, pero pronto la emoción creció aún más cuando Marge y
+                        Lisa decidieron unirse a la diversión. El juego "4 en Línea Homero vs. Bart" se volvió aún más
+                        emocionante con la incorporación de estos dos nuevos personajes.</h5>
+                    <h5>En este juego, los jugadores tienen la oportunidad de elegir entre cuatro personajes icónicos de
+                        la familia Simpson: Homero, Bart, Marge o Lisa.
+                    </h5>
+                    <h5>Los jugadores se esfuerzan al máximo para conectar cuatro fichas consecutivas de su personaje,
+                        ya sea horizontal, vertical o diagonalmente. La tensión aumenta a medida que las fichas caen y
+                        las estrategias se vuelven más elaboradas.</h5>
+                    <h5>Finalmente, después de una partida intensa y llena de risas, uno de los personajes logra una
+                        estrategia brillante que lo lleva a la victoria. Los demás, aunque derrotados, no pueden evitar
+                        reírse y felicitar al ganador por su astucia. Todos se dan cuenta de que, independientemente del
+                        resultado, jugar juntos es una forma divertida de unirlos y fortalecer su vínculo familiar.</h5>
+                    <h5>¡Puedes desafiar a tus oponentes para conseguir cuatro fichas en línea, o subir la apuesta y
+                        buscar cinco, seis o incluso siete fichas en línea para lograr la victoria! Con estas opciones,
+                        este juego te brinda la flexibilidad de ajustar la dificultad y la emoción a tu gusto. ¿Tienes
+                        lo que se necesita para convertirte en el campeón de Springfield?"</h5>
+                </div>
+                <div class="cajaComentarios">
+                    <h3 class="titulo">Comentarios (4)</h3>
+                    <div class="comentario">
+                        <div class="comentarioArriba">
+                            <div class="perfil">
+                                <img src="images/Fotos de perfil/Foto de perfil.svg" alt="Foto de perfil">
+                            </div>
+                            <input type="text" placeholder="Haz un comentario de este juego">
+                        </div>
+                        <button class="boton botonPrimarioCeleste">
+                            <h4>Publicar</h4>
+                        </button>
+                    </div>
+                    <div class="comentario">
+                        <div class="comentarioArriba">
+                            <div class="perfil">
+                                <img src="images/Fotos de perfil/Foto de perfil.svg" alt="Foto de perfil">
+                                <h5>Tú</h5>
+                                <p>3/11/2021</p>
+                            </div>
+                        </div>
+                        <img class="separacion" src="images/svg/Linea.svg" alt="Separador">
+                        <h5>Malisimo, a veces no carga el tablero , está muy verde todavía</h5>
+                    </div>
+
+                    <div class="comentario">
+                        <div class="comentarioArriba">
+                            <div class="perfil">
+                                <img src="images/Fotos de perfil/Foto de perfil 2.svg" alt="Foto de perfil">
+                                <h5>Roberto Fernandez</h5>
+                                <p>8/8/2021</p>
+                            </div>
+                        </div>
+                        <img class="separacion" src="images/svg/Linea.svg" alt="Separador">
+                        <h5>Mis hijos y yo nos hemos vuelto adictos a este juego. Es fácil de entender pero difícil de
+                            dominar.
+                            Una excelente manera de pasar tiempo en familia.</h5>
+                    </div>
+
+                    <div class="comentario">
+                        <div class="comentarioArriba">
+                            <div class="perfil">
+                                <img src="images/Fotos de perfil/Foto de perfil 3.svg" alt="Foto de perfil">
+                                <h5>Esteban Orellano</h5>
+                                <p>15/8/2023</p>
+                            </div>
+                        </div>
+                        <img class="separacion" src="images/svg/Linea.svg" alt="Separador">
+                        <h5>gran juego para pasar el rato con amigos</h5>
+                    </div>
+
+                    <div class="comentario">
+                        <div class="comentarioArriba">
+                            <div class="perfil">
+                                <img src="images/Fotos de perfil/Foto de perfil 4.svg" alt="Foto de perfil">
+                                <h5>Gonzalo Lucio</h5>
+                                <p>17/9/2023</p>
+                            </div>
+                        </div>
+                        <img class="separacion" src="images/svg/Linea.svg" alt="Separador">
+                        <h5>Juegazo. Muy divertido!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="tituloCaracteristica">
+                    <img src="images/svg/Multimedia.svg" alt="Multimedia">
+                    <h2>Galeria</h2>
+                </div>
+                <img src="images/Imagenes del juego/Menu Juego.jpg" alt="Menu Juego.jpg">
+                <img src="images/Imagenes del juego/Homero ganador.jpg" alt="Homero ganador.jpg">
+                <img src="images/Imagenes del juego/7 En Linea.jpg" alt="7 En Linea.jpg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/R2O2WNRqwTk?si=ssjznEtnaCgonh6k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footSuperior">
+            <div>
+                <a class="footSuperiorIzq" href="juegos.html">
+                    <img src="images/svg/Diamante-transformed-PhotoRoom 1.svg" alt="Logo">
+                    <h2>Joya</h2>
+                </a>
+            </div>
+            <div class="footRedes">
+                <img src="images/svg/Facebook.svg" alt="Logo">
+                <img src="images/svg/Instagram.svg" alt="Logo">
+                <img src="images/svg/Twitter.svg" alt="Logo">
+            </div>
+        </div>
+        <img class="footMedio" src="images/svg/Linea.svg" alt="Separacion">
+        <div class="footInferior">
+            <div class="columna">
+                <h3>Categorías</h3>
+                <h5>Valoraciones</h5>
+                <h5>Lanzamientos</h5>
+                <h5>Top 100 juegos</h5>
+                <h5>Todos los juegos</h5>
+            </div>
+            <div class="columna">
+                <h3>Mi cuenta</h3>
+                <h5>Logros</h5>
+                <h5>Ingresá</h5>
+                <h5>Idiomas y preferencias</h5>
+                <h5>Registro de transacciones</h5>
+            </div>
+            <div class="columna">
+                <h3>Acerca de nosotros</h3>
+                <h5>Contacto</h5>
+                <h5>Descripción breve</h5>
+                <h5>Premios y reconocimientos</h5>
+                <h5>Comentarios de la comunidad</h5>
+            </div>
+            <div class="columna">
+                <h3>Ayuda</h3>
+                <h5>Soporte técnico</h5>
+                <h5>Problemas comunes</h5>
+                <h5>Términos y condiciones</h5>
+                <h5>Preguntas frecuentes (FAQ)</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/juego.js"></script>
+    <script src="js/juego/cronometro.js"></script>
+    <script src="js/juego/jugar.js"></script>
+    <script src="js/juego/tablero.js"></script>
+    <script src="js/juego/ficha.js"></script>
+    <script src="js/juego/juego.js"></script>
+
+</body>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="icon" type="image/svg+xml" href="images/svg/Diamante-transformed-PhotoRoom 1.svg">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+
+</head>
+
+<body>
+    <div class="successAnimation">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmarkCircle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmarkCheck" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+        <h2>Felicidades! Ya estás registrado en Joya</h2>
+        <h2>Ahora iniciá sesión</h2>
+    </div>
+
+    <header class="navbar">
+        <div class="navbarParte">
+            <a href="juegos.html" class="iconoMedio">
+                <img src="images/svg/Diamante-transformed-PhotoRoom 1.svg" alt="Logo">
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="form">
+            <div class="formContainer">
+                <h2 class="formTitulo">Registrarse</h2>
+                <p class="formTitulo"><span class="asterisco">*</span>Campo obligatorio</p>
+                <form onsubmit="return false;" class="formRegister">
+
+                    <div class="labelContainer nombre">
+                        <label for="nombre">
+                            <img src="images/svg/Labels/Persona.svg" alt="sobre">
+                            <h5>Nombre</h5><span class="asterisco">*</span>
+                        </label>
+                        <input type="text" name="nombre" placeholder="Inserte su nombre aquí">
+                    </div>
+
+                    <div class="labelContainer apellido">
+                        <label for="apellido">
+                            <img src="images/svg/Labels/Persona.svg" alt="sobre">
+                            <h5>Apellido</h5><span class="asterisco">*</span>
+                        </label>
+                        <input type="text" name="apellido" placeholder="Inserte su apellido electrónico aquí">
+                    </div>
+
+                    <div class="labelContainer edad">
+                        <label for="edad">
+                            <img src="images/svg/Labels/Torta.svg" alt="sobre">
+                            <h5>Edad</h5><span class="asterisco">*</span>
+                        </label>
+                        <input type="number" name="edad" placeholder="Edad">
+                    </div>
+
+                    <div class="labelContainer correo">
+                        <label for="correo">
+                            <img src="images/svg/Labels/Sobre.svg" alt="sobre">
+                            <h5>Correo electrónico</h5><span class="asterisco">*</span>
+                        </label>
+                        <input type="email" name="correo" placeholder="Inserte su correo electrónico aquí">
+                    </div>
+
+                    <div class="labelContainer usuario">
+                        <label for="usuario">
+                            <img src="images/svg/Labels/Persona.svg" alt="sobre">
+                            <h5>Usuario (opcional)</h5>
+                        </label>
+                        <input type="text" name="usuario" placeholder="Inserte su usuario">
+                    </div>
+
+                    <div class="labelContainer contraseña">
+                        <label for="contraseña">
+                            <img src="images/svg/Labels/Candado.svg" alt="sobre">
+                            <h5>Contraseña</h5><span class="asterisco">*</span>
+                        </label>
+                        <input type="password" name="contraseña" placeholder="Inserte su contraseña aquí ">
+                    </div>
+
+                    <div class="labelContainer confirmarContraseña">
+                        <label for="confirmarContraseña">
+                            <img src="images/svg/Labels/Candado con flecha.svg" alt="sobre">
+                            <h5>Confirmar contraseña</h5><span class="asterisco">*</span>
+                        </label>
+                        <input type="password" name="confirmarContraseña"
+                            placeholder="Inserte su contraseña nuevamente aquí">
+                    </div>
+                    <div class="captcha">
+                        <input type="checkbox" class="robot" name="robot" value="off">
+                        <p>No soy un robot</p>
+                        <img src="images/Captcha/reCaptcha.webp" alt="reCaptcha.webp">
+                    </div>
+
+                    <button class="boton botonPrimarioCeleste botonRegistrarse botonForm">
+                        <h4>Registrarse</h4>
+                    </button>
+
+                </form>
+                <div class="separador">
+                    <img src="images/svg/Linea.svg" alt="separacion">
+                    <h4>O</h4>
+                    <img src="images/svg/Linea.svg" alt="separacion">
+                </div>
+                <button class="boton botonSecundarioCeleste botonRegistrarse">
+                    <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50.2388 25.0186C50.2388 11.2114 39.046 0.0185547 25.2388 0.0185547C11.4316 0.0185547 0.23877 11.2114 0.23877 25.0186C0.23877 37.4968 9.38092 47.8393 21.3325 49.7148V32.2451H14.9849V25.0186H21.3325V19.5108C21.3325 13.2451 25.0648 9.78418 30.7753 9.78418C33.5105 9.78418 36.3715 10.2725 36.3715 10.2725V16.4248H33.219C30.1135 16.4248 29.145 18.3519 29.145 20.3291V25.0186H36.0785L34.9703 32.2451H29.145V49.7148C41.0965 47.8393 50.2388 37.4968 50.2388 25.0186Z">
+                        </path>
+                    </svg>
+                    <h4>Registrarse con Facebook</h4>
+                </button>
+                <button class="boton botonSecundarioCeleste botonRegistrarse">
+                    <svg width="60" height="61" viewBox="0 0 60 61" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Property 1=Google">
+                            <path id="Vector"
+                                d="M48.3744 51.2158C53.4563 46.4467 56.388 39.4421 56.388 31.121C56.388 29.1836 56.217 27.3205 55.8994 25.5322H30.588V36.1137H45.0516C44.4164 39.5166 42.5108 42.398 39.6523 44.3353"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_2"
+                                d="M6.59607 42.7705C11.0182 51.6876 20.0824 57.8228 30.5881 57.8228C37.8443 57.8228 43.9278 55.3886 48.3744 51.2157L39.6523 44.3352C37.2579 45.9746 34.2041 46.9681 30.5881 46.9681C23.6006 46.9681 17.6637 42.1742 15.5381 35.7161"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_3"
+                                d="M6.59601 18.2544C4.76364 21.9305 3.71301 26.0787 3.71301 30.5C3.71301 34.9214 4.76364 39.0695 6.59601 42.7456L13.5591 37.2314L15.5381 35.6914C15.0006 34.052 14.683 32.3132 14.683 30.5C14.683 28.6868 15.0006 26.948 15.5381 25.3087"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_4"
+                                d="M30.5881 14.0566C34.5461 14.0566 38.0642 15.4475 40.8738 18.1303L48.5698 10.306C43.9033 5.88463 37.8442 3.17725 30.5879 3.17725C20.0823 3.17725 11.0181 9.31245 6.59595 18.2545L15.5379 25.3088C17.6636 18.8507 23.6006 14.0566 30.5881 14.0566Z"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                    <h4>Registrarse con Google</h4>
+                </button>
+            </div>
+            <div class="formAlternativa">
+                <h3>¿Ya tienes una cuenta? <span class="botonAlternativa">Iniciá sesión</span></h3>
+            </div>
+        </div>
+        <div class="form formHidden">
+            <div class="formContainer">
+                <h2 id="formTitulo">Iniciar sesión</h2>
+                <form action="juegos.html" class="formRegister formLogin">
+
+                    <div class="labelContainer correo">
+                        <label for="correo">
+                            <img src="images/svg/Labels/Sobre.svg" alt="sobre">
+                            <h5>Correo electrónico</h5>
+                        </label>
+                        <input type="email" name="correo" placeholder="Inserte su correo electrónico aquí">
+                    </div>
+
+                    <div class="labelContainer contraseña">
+                        <label for="contraseña">
+                            <img src="images/svg/Labels/Candado.svg" alt="candado">
+                            <h5>Contraseña</h5>
+                        </label>
+                        <input type="password" name="contraseña" placeholder="Inserte su contraseña aquí ">
+                    </div>
+                    <button class="boton botonPrimarioCeleste botonForm">
+                        <h4>Iniciar sesión</h4>
+                    </button>
+
+                </form>
+                <div class="separador">
+                    <img src="images/svg/Linea.svg" alt="separacion">
+                    <h4>O</h4>
+                    <img src="images/svg/Linea.svg" alt="separacion">
+                </div>
+                <a href="juegos.html" class="boton botonSecundarioCeleste">
+                    <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50.2388 25.0186C50.2388 11.2114 39.046 0.0185547 25.2388 0.0185547C11.4316 0.0185547 0.23877 11.2114 0.23877 25.0186C0.23877 37.4968 9.38092 47.8393 21.3325 49.7148V32.2451H14.9849V25.0186H21.3325V19.5108C21.3325 13.2451 25.0648 9.78418 30.7753 9.78418C33.5105 9.78418 36.3715 10.2725 36.3715 10.2725V16.4248H33.219C30.1135 16.4248 29.145 18.3519 29.145 20.3291V25.0186H36.0785L34.9703 32.2451H29.145V49.7148C41.0965 47.8393 50.2388 37.4968 50.2388 25.0186Z">
+                        </path>
+                    </svg>
+                    <h4>Iniciar sesión con Facebook</h4>
+                </a>
+                <a href="juegos.html" class="boton botonSecundarioCeleste">
+                    <svg width="60" height="61" viewBox="0 0 60 61" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Property 1=Google">
+                            <path id="Vector"
+                                d="M48.3744 51.2158C53.4563 46.4467 56.388 39.4421 56.388 31.121C56.388 29.1836 56.217 27.3205 55.8994 25.5322H30.588V36.1137H45.0516C44.4164 39.5166 42.5108 42.398 39.6523 44.3353"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_2"
+                                d="M6.59607 42.7705C11.0182 51.6876 20.0824 57.8228 30.5881 57.8228C37.8443 57.8228 43.9278 55.3886 48.3744 51.2157L39.6523 44.3352C37.2579 45.9746 34.2041 46.9681 30.5881 46.9681C23.6006 46.9681 17.6637 42.1742 15.5381 35.7161"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_3"
+                                d="M6.59601 18.2544C4.76364 21.9305 3.71301 26.0787 3.71301 30.5C3.71301 34.9214 4.76364 39.0695 6.59601 42.7456L13.5591 37.2314L15.5381 35.6914C15.0006 34.052 14.683 32.3132 14.683 30.5C14.683 28.6868 15.0006 26.948 15.5381 25.3087"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_4"
+                                d="M30.5881 14.0566C34.5461 14.0566 38.0642 15.4475 40.8738 18.1303L48.5698 10.306C43.9033 5.88463 37.8442 3.17725 30.5879 3.17725C20.0823 3.17725 11.0181 9.31245 6.59595 18.2545L15.5379 25.3088C17.6636 18.8507 23.6006 14.0566 30.5881 14.0566Z"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                    <h4>Iniciar sesión con Google</h4>
+                </a>
+            </div>
+            <div class="formAlternativa">
+                <h3>¿No tienes una cuenta? <span class="botonAlternativa">Registrate</span></h3>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footSuperior">
+            <div>
+                <a class="footSuperiorIzq" href="juegos.html">
+                    <img src="images/svg/Diamante-transformed-PhotoRoom 1.svg" alt="Logo">
+                    <h2>Joya</h2>
+                </a>
+            </div>
+            <div class="footRedes">
+                <img src="images/svg/Facebook.svg" alt="Logo">
+                <img src="images/svg/Instagram.svg" alt="Logo">
+                <img src="images/svg/Twitter.svg" alt="Logo">
+            </div>
+        </div>
+        <img class="footMedio" src="images/svg/Linea.svg" alt="Separacion">
+        <div class="footInferior">
+            <div>
+                <h3>Categorías</h3>
+                <h5>Valoraciones</h5>
+                <h5>Lanzamientos</h5>
+                <h5>Top 100 juegos</h5>
+                <h5>Todos los juegos</h5>
+            </div>
+            <div>
+                <h3>Mi cuenta</h3>
+                <h5>Logros</h5>
+                <h5>Ingresá</h5>
+                <h5>Idiomas y preferencias</h5>
+                <h5>Registro de transacciones</h5>
+            </div>
+            <div>
+                <h3>Acerca de nosotros</h3>
+                <h5>Contacto</h5>
+                <h5>Descripción breve</h5>
+                <h5>Premios y reconocimientos</h5>
+                <h5>Comentarios de la comunidad</h5>
+            </div>
+            <div>
+                <h3>Ayuda</h3>
+                <h5>Soporte técnico</h5>
+                <h5>Problemas comunes</h5>
+                <h5>Términos y condiciones</h5>
+                <h5>Preguntas frecuentes(FAQ)</h5>
+            </div>
+        </div>
+    </footer>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
