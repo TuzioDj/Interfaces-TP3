@@ -16,8 +16,8 @@ class Tablero {
 
         this.image = new Image();
         this.imageArrow = new Image();
-        this.image.src = "/images/4 en Linea/Tablero/Pedazo de tablero.png";
-        this.imageArrow.src = "/images/4 en Linea/Tablero/Flecha para poner ficha.png"
+        this.image.src = "../../images/4 en Linea/Tablero/Pedazo de tablero.png";
+        this.imageArrow.src = "../../images/4 en Linea/Tablero/Flecha para poner ficha.png"
 
         //Generamos la matriz de los casilleros y el arreglo de flechas para colocar fichas
         this.matriz = this.generarMatriz();
