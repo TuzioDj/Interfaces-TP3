@@ -32,11 +32,11 @@ class Juego {
         //Generamos las fichas de cada jugador en base a su posicion
         if (pos < (this.tablero.ancho * this.tablero.ladoImagen / 2)) {
             //Si la ficha se encuentra del lado izquierdo del tablero, sera del jugador1
-            ficha = new Ficha(pos + this.radius + 5, (Math.random() * (((this.tablero.ladoImagen * this.tablero.alto)) - this.tablero.comienzoY) + this.tablero.comienzoY), '#ff0000', ctx, this.radius, `Interfaces-TP3/images/4 en Linea/Tablero/Ficha ${jugador1} amarilla.png`, 1);
+            ficha = new Ficha(pos + this.radius + 5, (Math.random() * (((this.tablero.ladoImagen * this.tablero.alto)) - this.tablero.comienzoY) + this.tablero.comienzoY), '#ff0000', ctx, this.radius, `images/4 en Linea/Tablero/Ficha ${jugador1} amarilla.png`, 1);
             this.fichas.push(ficha);
         } else {
             //Si la ficha se encuentra del lado derecho del tablero, sera del jugador2
-            ficha = new Ficha(pos + this.radius + 5, (Math.random() * (((this.tablero.ladoImagen * this.tablero.alto)) - this.tablero.comienzoY) + this.tablero.comienzoY), '#ff0000', ctx, this.radius, `Interfaces-TP3/images/4 en Linea/Tablero/Ficha ${jugador2} roja.png`, 2);
+            ficha = new Ficha(pos + this.radius + 5, (Math.random() * (((this.tablero.ladoImagen * this.tablero.alto)) - this.tablero.comienzoY) + this.tablero.comienzoY), '#ff0000', ctx, this.radius, `images/4 en Linea/Tablero/Ficha ${jugador2} roja.png`, 2);
             //Se bloquea la ficha para que no pueda jugar el jugador2
             ficha.bloquearFicha();
             this.fichas.push(ficha);
